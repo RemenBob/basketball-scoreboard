@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basketball Scoreboard</title>
+        <link rel="stylesheet" href="basketballscoreboard.css">
+    </head>
+    <body>
+        <h2 id="timer">00:00</h2>
+        <button class="btn" id="timer-btn" onclick="incrementTimer()">+1 Minute</button>
+        <div class="container">
+            <div class="sub-container">
+                <h3 class="title-text">HOME</h3>
+                <h3 class="score" id="home-score-el">0</h3>
+                <button class="btn" onclick="homeIncrement('1')">+1</button>
+                <button class="btn" onclick="homeIncrement('2')">+2</button>
+                <button class="btn" onclick="homeIncrement('3')">+3</button>
+                <h4 class="foul-text">FOULS</h4>
+                <h4 class="foul-numb" id="foul-el-home">0</h4>
+                <button class="btn" onclick="incrementHomeFouls()">+1 Foul</button>
+            </div>
+            <div id="period">
+                <h4 class="period-text">PERIOD</h4>
+                <h4 id="period-el">1</h4>
+                <button class="btn" onclick="incrementPeriod()">+1 Period</button>
+            </div>
+            <div class="sub-container">
+                <h3 class="title-text">GUEST</h3>
+                <h3 class="score" id="guest-score-el">0</h3>
+                <button class="btn" onclick="guestIncrement('1')">+1</button>
+                <button class="btn" onclick="guestIncrement('2')">+2</button>
+                <button class="btn" onclick="guestIncrement('3')">+3</button>
+                <h4 class="foul-text">FOULS</h4>
+                <h4 class="foul-numb" id="foul-el-guest">0</h4>
+                <button class="btn" onclick="incrementGuestFouls()">+1 Foul</button>
+            </div>
+        </div>
+        <button class="btn" id="new-game-btn" onclick="newGame()">NEW GAME</button>
+        <script src="basketballscoreboard.js"></script>
+    </body>
+</html>

@@ -1,0 +1,133 @@
+body {
+    background: #1B244A;
+    margin: 0;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Cursed Timer ULiL';
+    src: url("font/CursedTimerUlil-Aznm.ttf");
+}
+
+#timer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Cursed Timer ULiL';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 127px;
+    width: 18%;
+    color: #F94F6D;
+    background: black;
+    margin: 3% auto 0;
+    background-size: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+.title-text {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 36px;
+    color: #EEEEEE;
+    margin-bottom: 20%;
+}
+
+.score {
+    font-family: 'Cursed Timer ULiL';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 127px;
+    color: #F94F6D;
+    background: black;   
+    margin: 0;
+    text-align: center;
+    
+}
+
+.btn {
+    font-family: 'Cursed Timer ULiL';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #9AABD8;
+    background: #1B244A;
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    padding: 9px 10px 9px 7px;
+    margin-top: 20%;
+}
+
+#new-game-btn {
+    margin-top: 2%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#timer-btn {
+    margin-top: 1%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+
+.period-text {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    color: #EEEEEE;
+    margin-top: 50%;
+    text-align: center;
+}
+
+#period-el {
+    font-family: 'Cursed Timer ULiL';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 80px;
+    color: #F94F6D;
+    background: black;   
+    margin: 0;
+    text-align: center;
+
+}
+
+.foul-text {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    color: #EEEEEE;
+    margin-top: 15%;
+    text-align: center;
+}
+
+.foul-numb {
+    font-family: 'Cursed Timer ULiL';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 80px;
+    color: #F94F6D;
+    background: black;   
+    margin: 0;
+    text-align: center;
+}
