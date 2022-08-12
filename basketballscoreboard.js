@@ -8,11 +8,13 @@ let homeFoul = 0;
 function homeIncrement(point) {
     homeScore += parseInt(point);
     document.getElementById("home-score-el").textContent = homeScore;
+    checkLeader();
 }
 
 function guestIncrement(point) {
     guestScore += parseInt(point);
     document.getElementById("guest-score-el").textContent = guestScore;
+    checkLeader();
 }
 
 function newGame() {
@@ -25,6 +27,8 @@ function newGame() {
     homeFoul = -1;
     incrementHomeFouls();
     incrementGuestFouls();
+    document.getElementById("guest-txt").style.background = "transparent";
+    document.getElementById("home-txt").style.background = "transparent";
 }
 
 function incrementTimer() {
@@ -61,4 +65,14 @@ function incrementHomeFouls() {
 function incrementGuestFouls() {
     guestFoul++;
     document.getElementById("foul-el-guest").textContent = guestFoul;
+}
+
+function checkLeader() {
+    if (homeScore > guestScore) {
+        document.getElementById("home-txt").style.background = "red";
+        document.getElementById("guest-txt").style.background = "transparent";
+    } else {
+        document.getElementById("home-txt").style.background = "transparent";
+        document.getElementById("guest-txt").style.background = "red";
+    }
 }
